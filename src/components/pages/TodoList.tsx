@@ -1,5 +1,11 @@
-import React from "react";
+import { List } from "../organisms/List";
 
 export const TodoList = () => {
-  return <div>TodoList</div>;
+  return (
+    <>
+      <div className="todo-box">
+        <List />
+      </div>
+    </>
+  );
 };
