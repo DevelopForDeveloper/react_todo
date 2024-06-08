@@ -16,3 +16,9 @@
   margin: 0 auto;
   padding: 1.5rem;
 }
+
+li {
+  margin-left: 2rem;
+  list-style: none;
+  text-align: left !important;
+}

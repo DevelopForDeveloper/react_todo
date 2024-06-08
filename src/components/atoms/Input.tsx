@@ -1,9 +1,10 @@
-import React from "react";
-
-export const Input = () => {
-  const changeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-  };
-
-  return <input type="text" onChange={changeHandler} />;
+export const Input = ({
+  onChange,
+  value
+}: {
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  value: string;
+}) => {
+  console.log();
+  return <input type="text" onChange={onChange} value={value} />;
 };
