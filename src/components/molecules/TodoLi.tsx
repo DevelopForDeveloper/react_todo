@@ -16,10 +16,12 @@ export const TodoLi = ({
   deleteHandler
 }: TodoLiProps) => {
   return (
-    <li key={item.id}>
-      {index + 1}. {item.todo}
-      <Button text="edit" onClick={() => editHandler(item.id)} />
-      <Button text="delete" onClick={() => deleteHandler(item.id)} />
-    </li>
+    <>
+      <li key={item.id}>
+        {index + 1}. {item.todo}
+        <Button text="edit" onClick={() => editHandler(item.id)} />
+        <Button text="delete" onClick={() => deleteHandler(item.id)} />
+      </li>
+    </>
   );
 };

@@ -21,20 +21,25 @@ export const List = () => {
       setEditTodo(editTodo);
     }
   };
+  console.log({ editTodo });
 
   const deleteHandler = (id: number | undefined) => {
     const updatedTodo = todoList.filter((item) => item.id !== id);
     setTodoList(updatedTodo);
   };
 
-  console.log({ todoList });
+  // console.log({ todoList });
 
   return (
     <div>
       <Form addList={addTodo} />
-      {todoList.map((item, index) =>
-        TodoLi({ item, index, editTodo, editHandler, deleteHandler })
-      )}
+      {todoList.map((item, index) => {
+        return item.id === editTodo.id ? (
+          <Form />
+        ) : (
+          TodoLi({ item, index, editHandler, deleteHandler })
+        );
+      })}
     </div>
   );
 };
