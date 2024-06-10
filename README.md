@@ -1,5 +1,7 @@
 # React Todo list with atomic design
 
-- []: create Todo list with atomic design
-- []: add MUI library
-- []: add useForm library
+- [v]: create Todo list with atomic design
+- [ ]: overlapped form refactoring
+- [ ]: add css to tailwind css
+- [ ]: add MUI library
+- [ ]: add useForm library
