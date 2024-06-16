@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form } from "../molecules/Form";
+import { TodoForm } from "../molecules/TodoForm";
 import { Todo } from "../type/Todo";
 import { TodoLi } from "../molecules/TodoLi";
 import { EditForm } from "../molecules/EditForm";
@@ -33,7 +33,7 @@ export const List = () => {
 
   return (
     <div>
-      <Form addList={addTodo} />
+      <TodoForm addList={addTodo} />
       {todoList.map((item, index) =>
         item.id === isEditing ? (
           <EditForm todoEdit={newTodo} isEditing={isEditing} />

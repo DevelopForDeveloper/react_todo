@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Button } from "../atoms/Button";
-import { Input } from "../atoms/Input";
 import { Todo } from "../type/Todo";
+import Form from "./Form";
 
 export const EditForm = ({
   todoEdit,
@@ -28,9 +27,10 @@ export const EditForm = ({
   };
 
   return (
-    <form onSubmit={saveHandler}>
-      <Input onChange={changeHandler} value={editTodo.todo} />
-      <Button text="save" />
-    </form>
+    <Form
+      formHandler={saveHandler}
+      changeHandler={changeHandler}
+      todo={editTodo.todo}
+    />
   );
 };

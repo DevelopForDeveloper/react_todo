@@ -5,6 +5,5 @@ export const Input = ({
   onChange: React.ChangeEventHandler<HTMLInputElement>;
   value: string;
 }) => {
-  console.log();
   return <input type="text" onChange={onChange} value={value} />;
 };
